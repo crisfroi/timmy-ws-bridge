@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  timmy-ws-bridge:
+    build: .
+    container_name: timmy-ws-bridge
+    ports:
+      - "7788:7788"
+    environment:
+      - SUPABASE_URL=https://wdieynendfjbkbhfovrx.supabase.co
+      -SUPABASE_SERVICE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkaWV5bmVuZGZqYmtiaGZvdnJ4Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDc4MjkyMSwiZXhwIjoyMDY2MzU4OTIxfQ.X3Irl85Dy5HdZiPsMQUczySZgAT-dDyz7CZKjSn0X8Y
